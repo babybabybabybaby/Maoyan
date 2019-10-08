@@ -1,0 +1,28 @@
+.i{
+    height:.5rem;
+    width:100%;
+    font-weight:500;
+    line-height:.3rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:2;
+    
+    color: white;
+    font-size:.18rem;
+    background:#e54847;
+   
+    .ico{
+        font-size:.8rem;
+        font-weight:100;
+    }
+    .tetle{
+        display: inline-block;
+        width:3.4rem;
+       position: relative;
+       top:-.14rem;
+       left:0;
+    text-align: center;
+       
+    }
+}

@@ -1,0 +1,35 @@
+
+.filmTabbar{
+        list-style: none;
+        position:fixed;
+        left:0;
+        display: flex;
+        top:.50rem;
+        height:.5rem;
+         width: 100%;
+         line-height:.5rem;
+         background: white;
+         border-bottom:.01rem solid #eee;
+         z-index: 2;
+        li{
+        text-decoration:none;
+        flex: 1;
+        margin: 0 auto;
+        text-align: center;
+        line-height:.5rem;
+    
+            
+       a{
+           text-decoration:none;
+           font-weight: 700;
+           font-size:.15rem;
+           color: #555;
+          
+       }
+
+       .same{
+           color:#e54847;
+           border-bottom:.02rem solid #e54847;
+       }
+        }
+    }

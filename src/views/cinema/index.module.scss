@@ -1,0 +1,29 @@
+.libo{
+    width:3.49rem;
+    height:1.24rem;
+    margin: 0 auto;
+    .ellipsis{
+        font-weight:500;
+        font-size:.18rem;
+        line-height:.22rem;
+        width:100%;
+        span{
+            color:#e00;
+            text-indent:.5em;
+            display: inline-block;
+        }
+    }
+    .boxFix{
+        width:3rem;
+    overflow: hidden;
+    white-space: nowrap;
+     text-overflow: ellipsis;
+     color:#666;
+    }
+    .relative{
+        position: relative;
+        top: -.16rem;
+       left:3.01rem;
+       color:#666;
+    }
+}

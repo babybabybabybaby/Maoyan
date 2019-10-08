@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Tabbar from "./components/Tabbar"
+import Header from "./components/header"
+import "./index.css"
+import store from './Redux';
+class App extends React.Component{
+state={
+  isShow:true
 }
-
+  componentWillMount(){
+    //订阅者
+    store.subscribe(()=>{
+      //  console.log("store被修改",store.getState())
+      this.setState({
+        isShow:store.getState().isTabbar
+      })
+    })
+  }
+  render(){
+    return(
+      <div>
+        <Header/>
+        {
+          this.props.children
+        }
+        {
+          this.state.isShow?<Tabbar/>:null
+        }
+        
+      </div>
+    )
+  }
+}
 export default App;
